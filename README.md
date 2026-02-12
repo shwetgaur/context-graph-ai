@@ -64,7 +64,7 @@ This information is stored as nodes and relationships in a graph structure.
 
 Example graph:
 
-![Context Graph](C:\Users\shwet\context-graph-ai\diagrams\internshi_assignment.png)
+![Context Graph](diagrams\internshi_assignment.png)
 
 
 During runtime:
@@ -183,6 +183,25 @@ Characteristics:
 - Tracks user workflow
 - Produces more relevant responses
 
+
+## LangGraph Workflow Example
+
+The system also includes a LangGraph-based orchestration layer that manages context retrieval and response generation in a structured workflow.
+
+Example interaction:
+
+User: Help me finish my assignment  
+AI:  I'm unable to determine specific due dates as I don't have real-time access to your personal schedule or assignments. It's best to check with your teacher or the platform where you received the assignment for the accurate due date.
+
+In this workflow:
+- User input is passed through a LangGraph pipeline  
+- Context graph is queried  
+- Relevant context is injected into the prompt  
+- The LLM generates a response  
+- Conversation state is maintained  
+
+LangGraph enables a modular and stateful architecture where context updates, retrieval, and response generation are handled in a structured pipeline rather than a single prompt call.
+
 ---
 
 
@@ -194,7 +213,7 @@ Characteristics:
 ### Install Dependencies
 ```bash
 pip install langgraph networkx ollama
-````
+```
 
 ### Run Ollama Model
 
