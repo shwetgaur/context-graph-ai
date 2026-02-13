@@ -64,7 +64,7 @@ This information is stored as nodes and relationships in a graph structure.
 
 Example graph:
 
-![Context Graph](diagrams\internshi_assignment.png)
+![Context Graph](diagrams/internshi_assignment.png)
 
 
 During runtime:
